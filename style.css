@@ -1,0 +1,76 @@
+.header  {
+    width:100%;
+    text-align: left;
+}
+
+.header h3 {
+    display:inline;
+}
+.header button {
+    float:right;
+    border:1px double rgb(0, 0, 0);
+}
+
+.gigantic_image {
+    width:100%;
+}
+
+#start_btn, #status {
+    font-size:22px;
+}
+.footer {
+    background-color:rgb(148, 207, 255);
+    position: fixed;
+    bottom:0;
+    width:100%;
+    text-align:center;
+}
+
+.modal-dialog {
+    width:90%;
+}
+
+.instruction {
+    display:inline-block;
+    width:45%;
+}
+
+video {
+    background:url("game_console.png");
+    background-size:cover;
+    background-position:center;
+    padding:25px;
+    animation-name:video_color_change;
+    animation-duration:2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes video_color_change {
+    from {
+    background-color:magenta;
+    background-blend-mode: soft-light;
+    border-radius:5%;
+    }
+    to {
+        background-color:blue;
+        background-blend-mode: soft-light;
+        border-radius:20%;
+    }
+}
+
+body {
+    animation-name:background_animation;
+    animation-duration:2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes background_animation {
+    from {
+    background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnVs3r30w0or2nDajjjQfYy2g_vnc1MJsowQ&usqp=CAU");
+    background-size:cover;
+    }
+    to {
+background-image:url("https://img.freepik.com/free-vector/neon-lights-background-concept_52683-35550.jpg?size=626&ext=jpg");
+background-size:cover;
+    }
+}
